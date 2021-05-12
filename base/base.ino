@@ -14,7 +14,6 @@ const int PIN_FOUR = A2;
 const int PIN_WATER_LEVEL = A4;
 const int PIN_PUMP = 13;
 
-//SoftwareSerial cloud(2, 4); // RX, TX
 const int PIN_TWISTED_GROUND_RX = 2;
 const int PIN_TWISTED_GROUND_TX = 3;
 
@@ -25,7 +24,6 @@ MembraneButton buttons[BUTTON_COUNT];
 MembraneButton waterLevel;
 
 wavTrigger wavTrig; // WAV Trigger control
-int i;
 
 void setup() {
   Serial.begin(57600);
@@ -52,7 +50,6 @@ void setup() {
   pinMode(PIN_TWISTED_GROUND_TX, OUTPUT);
   digitalWrite(PIN_TWISTED_GROUND_RX, LOW);
   digitalWrite(PIN_TWISTED_GROUND_TX, LOW);
-  //cloud.begin(57600);
 
   Serial.println("#Beginning...");
 }

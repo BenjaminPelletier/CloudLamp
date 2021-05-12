@@ -1,3 +1,5 @@
+// Interactions related to the intensity potentiometer
+
 const int POT_CHANGE_THRESHOLD = 10; // [1 / (current ADC count value)] ADC counts
 const unsigned long POT_UPDATE_PERIOD = 200; // milliseconds
 const int POT_SAMPLES_AVERAGED = 100;

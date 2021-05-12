@@ -1,0 +1,5 @@
+# CloudGen
+
+This folder contains [a script](Program.cs) to generate random cloud shapes that encompass all of the structural elements of the skymount, fit within size bounds, and are generally as small as practical.  These shapes consist of a collection of spheres which are then exported to [PoV-Ray](http://www.povray.org/) format so they can be [rendered](POVRay/cloud.pov) in PoV-Ray.  Using an orthographic camera and slicing this shape in certain planes, the wireframe structure necessary to define it can be visualized, one planar slice at a time.  These wireframe images are shown in the [POVRay folder](POVRay), and were projected onto a flat white surface so that the shade wireframe members could be bent into shape by tracing the projections.  Planes B, C, E, F, I, and L were not used in the final lamp.
+
+Note that the left and right side cross-bars are shown in the images as being above the front and back cross-bars, but they are actually mounted below.
